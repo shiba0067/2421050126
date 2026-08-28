@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>bài 3</title>
+    </head>
+    <body>
+        <marquee>
+            <img src="/anh/anh1.jpg">
+            <h3>em ko chơi đồ đâu</h3>
+        </marquee>
+        <!-- ol danh sách có số thứ tự -->
+         <ol>
+            <li>C#</li>
+            <li>python</li>
+            <li>javascript</li>
+            <li>em có</li>
+         </ol>
+         <!-- ul danh sách ko có số thứ tự -->
+         <ul>
+            <li>C#</li>
+            <li>python</li>
+            <li>javascript</li>
+            <li>em có</li>
+         </ul>
+         <!-- form vùng chứ phần tử from, vùng nhập thông tin -->
+          <!-- thuộc tính readonly sử dụng khi không muốn người dùng nhập thông tin vào input -->
+        <h1> form đăng kí</h1>
+        <from>
+            <div>
+                <b> họ và tên</b><br>
+                <input type="text" placeholder="họ và tên"><br>
+            </div>    
+                <!-- nếu input ko có type mặc định là text -->
+                <b> mật khẩu</b><br>
+                <input type="password" placeholder="mật khẩu" ><br>
+                <b> giới thiệu về bản thân</b><br>
+                <textarea>nhập thông tin.....</textarea>
+            </div>
+            <div>
+                <b> email</b><br>
+                <input type="email" placeholder="email"><br>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <div>
+                <b> số điện thoại</b><br>
+                <input type="tel" pattern="([0]{1}([3,9,8]{1})([0-9]{8}))"><br>
+                <input type="submit">
+            </div>
+            <div>
+                <b>giới tính</b><br>
+                <input type="radio" name="gioitinh " value="nam"> nam <br>
+                <input type="radio" name="gioitinh " value="nu"> nữ <br>
+                <!-- phải trùng tên mới chạy và có thêm dòng value-->
+            </div>
+            <div>
+                <b></b><br>
+                <input type="checkbox" name="sở thích" value="an">ăn<br>
+                <input type="checkbox" name="sở thích" value="uong">uống<br>
+                <input type="checkbox" name="sở thích" value="ngu">ngủ<br>
+                <input type="checkbox" name="sở thích" value="nghi">nghỉ<br>
+            </div>
+            <div>
+                <select name="bjj">
+                <option value="internet explorer"></option>
+                <option value="an">ăn</option>
+                <option value="choi">chơi</option>
+                <option value="ngu">ngủ</option>
+                <option value="nghi">nghỉ</option>
+                <option value="hoc">học</option>
+                <option value="nauan">nấu ăn</option>
+                <option value="ditam">đi tắm</option>
+                </select>
+            </div>
+            <button>xac nhận</button>
+            <input type="reset">
+        </from>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g19WtuuJvyQ?si=RMV9eA1kiJ4Cbkb2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <video controls width="200" height="320">
+            <source src="anh/video.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="" type="audio/mp3">
+
+        </audio>
+    </body>
+</html>
