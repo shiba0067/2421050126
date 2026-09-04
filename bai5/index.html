@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-        h3{
-            color: red; background: black;
+    <style>
+        .khoi-1{
+            background-color: black;
         }
-    
+        .khoi-2{
+            background-color: black;
+            /* margin truyền 1 giá trị thì sẽ cách xung quanh = giá trị đó */
+            /* 2 giá trị : giá trị đầu(trên dưới), giá trị 2(trái phải) */
+            /* nếu có 4 giá trị thì thứ tự là trên, phải, dưới, trái */
+            margin: 100px; 200px; 50px; 100px;
+        }
+        .khoi-3{
+            background-color: black;
+            /* làm cho đối tượng to nhỏ  */
+            padding: 100px; 200px; 100px; 50px;
+        }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,6 +29,13 @@
     <h3>em màu trắng</h3>
     <!-- nếu là id sử dụng dấu # + tên id -->
     <h4 id="tieude-1">wed</h4>
-    <h3 class="tieude-2">wed</h3>
+    <h3 class="khoi-2">wed1234</h3>
+    <div>wed4</div>
+    <div class="wed4">wed4</div>
+    <h5 class="khoi-3">hồ ba bể</h5>
+    <from>
+        <h6>nhâp thông tin</h6>
+        <input type="text" 
+    </from>
 </body>
 </html>
