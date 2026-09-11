@@ -1,0 +1,67 @@
+.lien-ket-quen-mk{
+    text-decoration: none;
+    color: #2fa4e7;
+}
+.quen-mk{
+    display: flex;
+    justify-content: flex-end;
+}
+.thong-tin{
+    margin-botton: 10px;
+}
+button{
+            width: 100%;
+            padding: 6px 0;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #2fa4e7;
+}
+input{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #2fa4e7;
+}
+.chuc-nang-dang-nhap{
+ 
+}
+.mm{
+    background-color: #2fa4e7;
+}
+.mmm{
+    background-color: #2fa4e7;
+}
+.TT{
+    width: 95%;
+    height: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #2fa4e7;
+}
+.tin-tren{
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #2fa4e7;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+
+
+}
+.p{
+    margin: 0px;
+}
+.h3{
+    margin: 0px;
+    color: #2fa4e7;
+}
+.tieu-de{
+
+}
+.xemtep{
+    color: #2fa4e7;
+    text-decoration: none;
+}
+.danh-sach-tin{
+    background-color: red;
+}

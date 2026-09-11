@@ -17,6 +17,9 @@
             list-style: none;
             margin: 0px;
             display: flex;
+            padding: 10px;
+            /* sét các khối đối tượng bọc ở trong khối tự động cách nhau khoảng cách = giá trị truyền vào "gap" */
+            gap: 10px;
 
         }
         .muc{
@@ -25,52 +28,97 @@
             padding: 15px;
 
         }
-        a{color: white;
-        text-decoration: none;
-    }
-    main{
-        display: flex;
-    }
-    .khoi-trai{
-        width: 20%;
-        height: 500px;
-    }
-    .dang-nhap{
-
-    }
-    .khoi-phai{
-        background-color: blue;
-        width: 80%;
-        hetght: 1000px;
-    }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai{
+             width: 20%;
+             height: 100%;
+             /* để vẽ viền dùng border */
+             /* border có 3 tham số(độ dày, loại đường viền, màu sắc ) */
+             border-right:1px solid #2fa4e7;
+        }
+        .dang-nhap{
+            width: 95%;
+            height:500px;
+            /* nếu margin để auto sẽ cân đối tượng ra giữa */
+            margin auto;
+        }
+        .khoi-phai{
+             width: 80%;
+             height: 90vh;
+        }
+        <link rel 
+    
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="menu">
             <ul class="danh-sach">
-                <li class="muc"><a href="a">đồ án</a></li>
-                <li class="muc"><a href="a"> thủ tục</a></li>
-                <li class="muc"><a href="a">một cẩu</a></li>
-                <li class="muc"><a href="a">e-mail</a></li>
+                <li class="muc"><a href="a">Thực tập, Đồ án</a></li>
+                <li class="muc"><a href="a">Thủ tục Một cửa</a></li>
+                <li class="muc"><a href="a">Một cẩu online</a></li>
+                <li class="muc"><a href="a">E-mail HUMG</a></li>
 
                
             </ul>
     </nav>
     <main>
-        <div class="khoi-trai">trái
+        <div class="khoi-trai">
             <div class="dang-nhap">
-                <form>
-                    <d>tài khoản</d><br>
-                    <input type="text"><br>
-                    <d>mật khẩu</d><br>
-                    <input type="password">
-                    <button>đăng nhâp</button>
-                    <button>đăng nhâp với tài khoản </button>
-
+                <form action="">
+                    <div class="thong-tin">
+                        <d>tài khoản</d><br>
+                        <input type="text"><br>
+                    </div>
+                    <div class="thong-tin">
+                        <d>mật khẩu</d><br>
+                        <input type="text"><br>
+                    </div>
+                    <div class="quen-mk">
+                        <i>
+                            <a class="lien-ket-quen-mk">quên mật khẩu</a>
+                        </i><br>
+                    </div>
+                    
+                    <div class="chuc-nang-dang-nhap">
+                        <button class="mm">đăng nhâp</button><br>
+                        <button class="mmm">đăng nhâp với tài khoản </button>
+                    </div>
                 </form>
             </div>
         </div>
-        <div class="khoi-phai">phải</div>
+        <div class="khoi-phai">
+            <div class="TT">
+                <div class="tin-tren">
+                    <h3 class="tieu-de">tin tức</h3>
+                    <p class="xemtep"> xem tiếp</p>
+                </div><div>
+                    <p>25/09/2026</p>
+                </div>
+
+            </div>
+             <div class="TT">
+                <div class="tin-tren">
+                    <h3 class="tieu-de">thông báo </h3>
+                    <p class="xemtep"> xem tiếp</p>
+                </div>
+                <div class="danh-sach-tin">
+                <div class="bai-viet"></div>
+                <div class="khoi-anh">
+                    <img src="" alt=""></div>
+                <div>
+                    <p>25/09/2026</p>
+                </div>
+                <div>
+                    <p>jfahnkfjajiosgjskjgksjgks</p>
+                </div>
+            </div>
 
     </main>
     
