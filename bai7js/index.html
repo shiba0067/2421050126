@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- internal javascript  -->
+     <script>
+        // có thể them nguồn html và trong js 
+        // lưu ý: html phải dặt trong cặp dấu ""
+        document.writeln("hello <br> world!");
+
+        var tensinhvien = "thanh tuấn";
+        var tuoi = 20;
+        document.writeln(tensinhvien);
+        document.writeln("<br>");
+        document.writeln(tuoi);
+        document.writeln("<br>");
+        document.writeln(tensinhvien  + "<br>" + tuoi);
+        var sothunhat = 10;
+        var sothuhai = 5;
+        var ketqua = sothunhat % sothuhai;
+        document.writeln("<br>");
+        document.writeln("ket qua la:" + ketqua );
+        document.writeln(++sothunhat);
+        document.writeln(--sothunhat);
+        // += -= *= /= 
+        sothunhat+=sothuhai;
+        document.writeln(sothunhat);
+        // boolean(true/false) 
+        // number số 
+        // string chữa 
+
+        var a =10;
+        var b =5.5;
+        // chuyển kiểu dữ liệu sang kiểu số
+
+        var tong = parseInt(a) + parseFloat(b);
+        document.writeln(tong);
+        // string 
+        // kiểm tra độ dài chuỗi 
+        document.writeln(tensinhvien.length);
+        // kiểm tra tồn tại
+        // indexof  tìm vị trí xuất hiện đầu tiên (có - vị trí/ ko có -1)
+        document.writeln("<br>");
+        document.writeln(tensinhvien.indexOf("t"));
+        
+        // includes kiem tra co ki tu trong chuoi ko? co = true/ ko = false 
+        document.writeln("<br>");
+        document.writeln(tensinhvien.includes("u"));
+        
+
+        // replace
+        document.writeln("<br>");
+        document.writeln(tensinhvien.replace("thanh" , "thái hoàng thanh"));
+
+        document.writeln("<br>");
+        tensinhvien = tensinhvien.replace("thanh" , "long")
+        document.writeln(tensinhvien);
+        
+
+        // kiem tra ky tu bat dau 
+        document.writeln("<br>");
+        document.writeln(tensinhvien.startsWith("thanh"));
+
+
+        document.writeln("<br>");
+        // viet thuong
+        document.writeln(tensinhvien.toLocaleLowerCase());
+        // viet hoa 
+        document.writeln(tensinhvien.toLocaleUpperCase());
+
+
+        // NUMBER
+        // kiem tra du lieu co phai so hay ko 
+        document.writeln("<br>");
+        var kq = typeof(10)
+        document.writeln(isNaN(kq));
+
+        // khai bao ngay cu the dinh dang thang/ngay/nam 
+        document.writeln("<br>");
+        var homnay = new Date();
+        document.writeln(homnay);
+
+        document.writeln("<br>");
+        var homnay = new Date("10/10/2026");
+        document.writeln(homnay);
+
+
+        // lay nam 
+        document.writeln("<br>");
+        var nam = homnay.getFullYear();
+        document.writeln(nam);
+
+
+        document.writeln("<br>");
+        var namsinhcua = nam -tuoi;
+        document.writeln( namsinhcua)
+
+
+        var gio = homnay.getTime();
+        document.writeln(gio);
+
+
+
+        // MANG 
+
+
+        var mangso = [1,2,3,4,6];
+        var mangten = ["thu" , "thuy" , "truc" ,"mai"];
+        var thongtin = [ "mai" ,  21 , false];
+
+
+        document.writeln("<br>");
+        document.writeln(mangso[2] , mangten[2]);
+
+        document.writeln("<br>");
+        document.writeln(mangten[2]);
+
+        document.writeln("<br>");
+        document.writeln(thongtin[1]);
+
+
+
+        // kiem tra do dai mag 
+        document.writeln("<br>");
+        document.writeln(mangso.length);
+
+        // concat laf gop mang 
+        var mang = mangso.concat(mangten , thongtin);
+        document.writeln(mang);
+
+
+        // join 
+        document.writeln("<br>");
+        document.writeln(mangso.join("a "));
+
+
+        // pop lay ra so cuoi cung
+        document.writeln("<br>");
+        document.writeln(mangso.pop());
+
+
+        // push
+        document.writeln("<br>");
+        mangso.push(6);
+        document.writeln(mangso);
+
+
+        //reverse
+        document.writeln("<br>");
+        document.writeln(mangso.reverse())
+
+
+
+        //phep so sanh
+        //==
+        //!=
+        //>
+        //<
+        //>=
+        //<=
+        document.writeln("<br>");
+        document.writeln(sothunhat);
+        document.writeln(sothuhai);
+        document.writeln(sothunhat <= sothuhai);
+
+        //&& so sanh nhieu dieu kien
+        document.writeln("<br>");
+        document.writeln(sothunhat > sothuhai && (a>b));
+        document.writeln("<br>");
+        document.writeln(sothunhat < sothuhai || (a<b));
+
+
+        if(nam == 2028){
+            document.writeln("hom nay em duoc nghi");
+        }
+        else{
+            document.writeln("hom nay em noi em can co ta");
+        }
+
+
+
+
+        document.writeln("<br>");
+        var diem = 10;
+        if (diem >= 9) {
+            document.writeln("xuat sac");
+        }
+        else if (diem >= 8 && diem < 9) {
+            document.writeln("gioi");
+        }
+        else if (diem >= 5 && diem < 7) {
+            document.writeln("kha");
+        }
+        else if (diem < 5 && diem >= 3) {
+            document.writeln("kem");
+        }
+        else {
+        document.writeln("kem");
+        }
+
+
+        //true || false =
+     </script>
+    <!-- <script src="script.js"></script>  -->
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: white;
+}
+
+/* BẢNG */
+.thoikhoabieu {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #2196e0;
+}
+
+/* CÁC Ô */
+.thoikhoabieu th,
+.thoikhoabieu td {
+    border: 1px solid #d5dce3;
+    height: 35px;
+    padding: 3px;
+}
+
+/* TIÊU ĐỀ */
+.thoikhoabieu thead th,
+.thoikhoabieu tfoot th {
+    height: 32px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.thoikhoabieu thead span,
+.thoikhoabieu tfoot span {
+    color: #666;
+    font-weight: normal;
+}
+
+/* CỘT TIẾT */
+.thoikhoabieu tbody th {
+    width: 72px;
+    background: linear-gradient(
+        to bottom,
+        #39a9e5,
+        #1599dc
+    );
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* CỘT GIỜ */
+.cot-gio,
+.gio-hoc {
+    width: 70px;
+}
+
+.gio-hoc {
+    background: linear-gradient(
+        to bottom,
+        #39a9e5,
+        #1599dc
+    );
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Ô MÔN HỌC */
+.monhoc {
+    background-color: #c9dcf7;
+    color: #111;
+    vertical-align: top;
+    text-align: left;
+    line-height: 16px;
+    padding: 5px !important;
+}
+
+.monhoc b {
+    font-weight: bold;
+}
+
+/* THỜI GIAN TRONG MÔN */
+.gio {
+    display: block;
+    color: #111;
+    margin-top: 4px;
+    padding-top: 3px;
+    border-bottom: 1px solid #2196e0;
+}
+
+/* CÁC Ô TRỐNG */
+.thoikhoabieu tbody td:empty {
+    background-color: white;
+}
+
+/* CHUỘT */
+.thoikhoabieu tbody td:hover {
+    background-color: #eef6ff;
+}
+
+/* BO GÓC NGOÀI */
+.thoikhoabieu {
+    border-radius: 5px;
+    overflow: hidden;
+}
