@@ -186,7 +186,7 @@
 
 
         document.writeln("<br>");
-        var diem = 10;
+        var diem = 5;
         if (diem >= 9) {
             document.writeln("xuat sac");
         }
@@ -202,6 +202,80 @@
         else {
         document.writeln("kem");
         }
+
+
+
+        //object : var name ={}
+        var thongtinsv = {
+            hoten: "Nguyen Thanh Tuan",
+            tuoi: 29,
+            gioitinh: true,
+            diachi: {
+                thanhpho: "ha noi",
+                phuong: "dong ngac",
+                duong: "le van hien",
+            }
+        }
+
+
+        var bophim = {
+            tenphim: "bao lua",
+            thoiluongphim: "2t",
+            thoigiancongchieu: "7h",
+            theloai: "hanh dong bom tan",
+            bientap: {
+                tacgia: ["papa"],
+                daodien: ["mama"],
+                doingusanxuat:["haitramngan"],
+            },
+            dienvien: {
+                dienvienchin: ["em"],
+                dienvienphu: ["tim"],
+            }
+        }
+
+
+        document.writeln(bophim.bientap.tacgia);
+        document.writeln(bophim.dienvien.dienvienchin);
+
+
+        //switch case
+        var d = new Date();
+        var theday = d.getDay();
+        switch (theday) {
+            case 5:
+                document.writeln("Thu 5");
+                break;
+            case 6:
+                document.writeln("Thu 6");
+                break;
+
+            case 0:
+                document.writeln("Chu nhat");
+                break;
+
+            default:
+                document.writeln("Cho toi cuoi tuan");
+                break;
+        } 
+        //for
+        for (var index = 1; index <= 10; index++) {
+            document.writeln("<br> xin chao" + index)    
+        }
+
+
+
+        var danhsachsinhvien = ["thuy" , "huyen", "hong", "tuan", "mai", "truc", "dao"];
+        for (var i = 0; i < danhsachsinhvien.length; i++) {
+            document.writeln("<br>");
+            if ( danhsachsinhvien[i] == "tuan" || danhsachsinhvien[i] == "thuy") {
+                document.writeln( "xin chao " + danhsachsinhvien[i] + "<br>");
+            }
+        }
+            
+           
+        
+
 
 
         //true || false =
