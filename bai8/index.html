@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài sỉu mobile</title>
+</head>
+<body>
+    <div>
+        ho va ten: <input type="text" id="hovaten">
+    </div>
+    <div>
+        <button onclick="xinchao('thanh tuan', 20)">Xin chao</button>
+    </div>
+    <div>
+        ket qua: <input type="text" id="ketqua">
+    </div>
+
+
+    <h1>tinh tong</h1>
+    <div>
+        so thu nhat: <input type="number" id="sothunhat">
+    </div>
+     <div>
+        so thu hai: <input type="number" id="sothuhai">
+    </div>
+    <div>
+        <button onclick="tinhtong()">tinh tong</button>
+    </div>
+    <div>
+        ket qua: <input type="number" id="tong" readonly>
+    </div>
+
+
+
+
+
+    <script>
+        //funtions
+        //de tao funtion dung cu phap
+        //1: hamf ko co tham so
+        // funtion + ten(){}
+        function xinchao(){
+            //document.writeln("xin chao");
+            var ten = document.getElementById("hovaten").value;
+            document.getElementById("ketqua").value = "xin chao" + ten;
+        }
+        //goi ham
+        xinchao()
+
+        function tinhtong(){
+            var c = document.getElementById("sothunhat").value;
+            var d = document.getElementById("sothuhai").value;
+            var e = parseFloat(c) + parseFloat(d);
+            document.getElementById("tong").value = e ;
+
+
+        }
+
+        //2: ham co tham so
+        //funtion + ten(tham so){}
+        // luu y cac tham so ngan cach nhau bang dau phay ,
+        function xinchao2(ten, tuoi){
+            document.writeln("xin chao" +" "+  ten + " " + tuoi);
+        }
+        xinchao2("mama", 19)
+
+        // tao ham tinh chu vi hinh chu nhat
+        function chuvi(a, b){
+             var p = (a + b) * 2;
+             document.writeln("chu vi hinh chu nhat la " + p)
+        }
+        chuvi(3, 3)
+
+        var danhsachsinhvien = ["thuy" , "duong", "viet", "hue", "thang"];
+        for (var i = 0; i < danhsachsinhvien.length; i++) {
+            document.writeln("<br>");
+            if ( danhsachsinhvien[i] == "thuy" || danhsachsinhvien[i] == "hue") {
+                document.writeln( "xin chao " + danhsachsinhvien[i] + "<br>");
+            }
+        }
+
+
+        var danhsachsinhvien = ["thuy" , "duong", "viet", "hue", "thang"];
+        for (var i = 0; i < danhsachsinhvien.length; i++) {
+            document.writeln("<br>");
+            if ( danhsachsinhvien[i] != "viet") {
+                document.writeln( "xin chao " + danhsachsinhvien[i] + "<br>");
+            }
+        }
+
+
+
+        var danhsachsinhvien = ["thuy" , "duong", "viet", "hue", "thang"];
+         function timSinhVien(danhsach, ten) {
+            for (var i = 0; i < danhsach.length; i++) {
+                if (danhsach[i] == ten) {
+                    document.writeln("Tim thay sinh vien: " + ten);
+                    return;
+                }
+            }
+
+            document.writeln("Khong tim thay sinh vien: " + ten);
+        }
+
+        timSinhVien(danhsachsinhvien, "thuy");
+
+
+
+        //event su kien
+
+
+
+    </script>
+    
+</body>
+</html>
